@@ -297,6 +297,7 @@ h3 {
   line-height: 25px;
   color: #5f5f6d;
   margin-bottom: 57px;
+  overflow: hidden;
 }
 
 .offering1,
@@ -445,7 +446,7 @@ h3 {
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .offerings {
     padding: 0 80px;
   }
@@ -500,15 +501,18 @@ h3 {
 
   .col1 img {
     max-width: 100%;
-    position: relative;
-    transform: none;
-    bottom: 0;
+    position: relative; /* Use absolute positioning */
+    left: 50%; /* Position the image at the center horizontally */
+    transform: translateX(-50%); /* Adjust to perfectly center the image */
+    bottom: -30px; /* Keep the image 30px below its original position */
   }
+  
 
   .col2 img {
     max-width: 100%;
     position: relative;
     transform: none;
+    transform: translateX(-50%); /* Adjust to perfectly center the image */
   }
 
   .col3,
@@ -517,12 +521,24 @@ h3 {
     margin-bottom: 20px;
   }
 
-  .col3 img,
+  .col3 img{
+    width: 80%;
+    position: relative;
+    transform: none;
+    border: 2px solid red;
+    margin-top: -40%;
+    transform: translateX(-50%); /* Adjust to perfectly center the image */
+    margin-bottom: 0;
+  }
+
   .col4 img {
     width: 80%;
     position: relative;
-    top: 0;
     transform: none;
+    border: 2px solid red;
+    margin-top: -20%;
+    transform: translateX(-50%); /* Adjust to perfectly center the image */
+    margin-bottom: 0;
   }
 
   .col5 img,
@@ -564,31 +580,6 @@ h3 {
     width: 100%;
     padding: 15px;
   }
-
-  .col1 img,
-  .col2 img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    transform: none;
-    bottom: 0;
-  }
-
-  .col3 img,
-  .col4 img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    transform: none;
-  }
-
-  .col5 img,
-  .col6 img {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
 }
 
 @media (max-width: 480px) {
@@ -623,31 +614,6 @@ h3 {
   .col6 {
     width: 100%;
     padding: 10px;
-  }
-
-  .col1 img,
-  .col2 img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    transform: none;
-    bottom: 0;
-  }
-
-  .col3 img,
-  .col4 img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    transform: none;
-  }
-
-  .col5 img,
-  .col6 img {
-    width: 100%;
-    height: auto;
-    position: relative;
   }
 }
 

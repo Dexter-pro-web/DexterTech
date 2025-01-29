@@ -234,8 +234,6 @@ export default function Home() {
           </div>
 
           <div
-            data-aos="fade-left"
-            data-aos-duration="50000"
             className="unlock-col2"
           >
             <img src="/images/unlock-img.png" alt="unlock image" />
