@@ -1,0 +1,36 @@
+.clients-container {
+  margin-top: 95px;
+  margin-bottom: 170px;
+  padding-bottom: 170px;
+}
+
+.clients-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.client {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.clients img {
+  max-height: 50px;
+  height: auto;
+  max-width: 180px;
+  width: auto;
+}
+
+.client.perlex {
+  color: gold;
+}

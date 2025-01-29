@@ -1,0 +1,308 @@
+.hero {
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 128px;
+  padding-bottom: 195px;
+  position: relative;
+  overflow: hidden;
+  background-color: #0a0b12;
+}
+
+.hero-text,
+.hero-img {
+  flex: 50;
+  background: none;
+}
+.hero-text {
+  padding: 26.5px 0;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  background: none;
+  color: white;
+}
+
+.hero-text p {
+  margin-bottom: 42px;
+  font-size: 18px;
+  background: none;
+  color: white;
+}
+
+#test {
+  position: absolute;
+  right: -200px;
+  width: 150%;
+  height: 500px;
+  background: none;
+}
+
+.hero button {
+  width: 300px;
+  height: 47px;
+  color: white;
+  background-color: #136dec;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #136dec;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #136dec;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#button-effect {
+  width: 58px;
+  height: 26px;
+  position: absolute;
+  right: -30px;
+  bottom: -10px;
+  z-index: 1;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-img img {
+  width: 372px;
+  height: 394px;
+  border-radius: 16px;
+  position: absolute;
+}
+
+@keyframes loadingBar {
+  0% {
+    background-position: 0% 0%; /* Start at the left */
+  }
+  100% {
+    background-position: 200% 0%; /* Move to the right and wrap around */
+  }
+}
+
+.container {
+  width: 100%; /* Full width */
+  height: 9px; /* Adjust height as needed */
+  background: linear-gradient(
+    110deg,
+    black 10%,
+    /* 10% black */ #d0a225 10%,
+    /* Start the gold at 10% */ #136dec 15%,
+    /* Smoothly transition from gold to blue between 10% and 15% */ white 15%
+      /* The remaining part is white */
+  );
+}
+
+/* Base CSS remains the same */
+
+@media only screen and (max-width: 1200px) {
+  .hero {
+    padding: 50px 80px;
+    padding-bottom: 150px;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero button {
+    width: 260px;
+    font-size: 14px;
+  }
+
+  .glow-on-hover {
+    width: 200px;
+    height: 45px;
+  }
+
+  #test {
+    right: -150px;
+    width: 130%;
+    height: 450px;
+  }
+
+  .hero-img img {
+    width: 320px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    padding-bottom: 100px;
+    height: auto; /* Let height adjust based on content */
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero button {
+    width: auto;
+    font-size: 13px;
+  }
+
+  .glow-on-hover {
+    width: 180px;
+    height: 40px;
+  }
+
+  /* Adjusting the image container */
+  .hero-img {
+    position: relative;
+    width: 100%;  /* Full width of the container */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the image horizontally */
+    height: auto; /* Adjust height based on the image */
+    margin-top: 20px; /* Add space between text and image */
+  }
+
+  /* Adjusting the image size and position */
+  .hero-img img {
+    max-width: 80%; /* Limit the image to 80% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 16px;
+  }
+
+  /* Special case for the #test image */
+  #test {
+    max-width: 80%; /* Limit the test image to 80% of the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Add space from the background image */
+    position: relative;
+    right: auto; /* Remove right offset */
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .hero {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero button {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .glow-on-hover {
+    width: 160px;
+    height: 35px;
+  }
+
+  #test {
+    right: -50px;
+    width: 120%;
+    height: 300px;
+  }
+
+  .hero-img img {
+    width: 240px;
+    height: 260px;
+  }
+}

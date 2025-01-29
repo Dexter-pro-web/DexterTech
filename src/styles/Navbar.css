@@ -1,0 +1,146 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0b12;
+  padding: 0 128px;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 12;
+}
+
+.navbar-logo .logo {
+  height: 40px;
+  width: 191px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-links li {
+  padding: 10px 0;
+}
+
+.navbar-links li a {
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  font-weight: 700;
+}
+
+.navbar-links li .nav-link.active {
+  color: #1a6ee5;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #1a6ee5;
+}
+
+.contact-btn {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: 2px solid white;
+  font-size: 12px !important;
+}
+
+.contact-btn.active {
+  color: white !important;
+  padding: 8px 12px !important;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: 2px solid white !important;
+  font-size: 12px !important;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  border: none;
+  color: white !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* For screens smaller than 1024px but larger than 768px */
+@media screen and (max-width: 1084px) {
+  .navbar {
+    padding: 20px 50px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-logo .logo {
+    height: 35px; /* Slightly smaller logo */
+    width: auto;
+  }
+
+  /* Reduce font size as the screen size shrinks */
+  .navbar-links li a {
+    font-size: 14px;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 809px) {
+  .navbar {
+    padding: 15px 30px; /* Adjust padding for even smaller screens */
+  }
+
+  .navbar-logo .logo {
+    height: 30px; /* Smaller logo */
+    width: auto;
+  }
+
+  /* Adjust the navbar links for mobile */
+  .navbar-links {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    max-width: 94.5vw;
+    width: 100%;
+    height: calc(100vh - 20px);
+    background-color: #0a0b12;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: none;
+    padding-top: 20px;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  /* Further reduce font size for mobile */
+  .navbar-links li a {
+    font-size: 12px; /* Smaller text for better fit */
+  }
+
+  /* Show the hamburger menu on mobile */
+  .hamburger {
+    display: flex;
+  }
+}

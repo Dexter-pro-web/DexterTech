@@ -1,0 +1,177 @@
+.accordion {
+  padding: 20px;
+}
+
+.accordion-item {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 34px 26px;
+  background-color: #0a0b12;
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  animation: glowAnimation 3s ease-in-out infinite; /* Slower animated glowing effect on hover */
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.accordion-number {
+  font-size: 12px;
+  color: white;
+  opacity: 67%;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.accordion h3 {
+  opacity: 67%;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.accordion-icon {
+  color: #fff;
+  font-size: 14px; /* Adjusted icon size for better visibility */
+  transition: transform 0.3s ease;
+}
+
+/* Transition of the icon when the accordion is expanded or collapsed */
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg); /* Rotates the icon when active */
+}
+
+.accordion-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    visibility 0s 0.3s, transform 0.3s ease-in-out;
+  padding-top: 0;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  padding-top: 15px;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.accordion-content p {
+  margin: 0;
+  color: white;
+  opacity: 67%;
+  font-size: 14px;
+}
+
+/* Soft glow effect on hover */
+.accordion-item:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: glowAnimation 3s ease-in-out infinite; /* Slower animated glowing effect */
+}
+
+/* Slower Keyframe animation for the soft glow effect */
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing effect */
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+
+  .accordion {
+    margin: 0;
+    padding: 0 30px;
+    margin-bottom: 200px;
+  }
+  
+  .accordion-item {
+    padding: 30px 20px;
+  }
+
+  .accordion-number {
+    font-size: 12px;
+  }
+
+  .accordion h3 {
+    font-size: 20px;
+  }
+
+  .accordion-content p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .accordion-icon {
+    font-size: 18px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .accordion-item {
+    padding: 20px;
+  }
+
+  .accordion-number {
+    font-size: 12px;
+  }
+
+  .accordion h3 {
+    font-size: 16px;
+  }
+
+  .accordion-content p {
+    font-size: 14px;
+  }
+
+  .accordion-icon {
+    font-size: 18px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .accordion-item {
+    padding: 15px;
+  }
+
+  .accordion-number {
+    font-size: 10px;
+  }
+
+  .accordion h3 {
+    font-size: 16px;
+  }
+
+  .accordion-content p {
+    font-size: 14px;
+  }
+
+  .accordion-icon {
+    font-size: 16px;
+  }
+}
+

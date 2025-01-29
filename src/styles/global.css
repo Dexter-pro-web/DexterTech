@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "MyCustomFont"; /* Custom name for the font */
+  src: url("../assets/fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-regular.otf"); /* Add multiple formats for compatibility */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1 {
+  background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MyCustomFont", sans-serif;
+  letter-spacing: 1%;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  h2 {
+    font-size: 1.875rem; /* 30px */
+  }
+
+  h3 {
+    font-size: 1.625rem; /* 26px */
+  }
+
+  h4 {
+    font-size: 1.375rem; /* 22px */
+  }
+
+  p {
+    font-size: 0.9375rem; /* 15px */
+  }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+
+  h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  h4 {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  p {
+    font-size: 0.875rem; /* 14px */
+  }
+}

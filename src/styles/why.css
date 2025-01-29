@@ -1,0 +1,153 @@
+.why {
+  display: flex;
+  padding: 67px 128px;
+  padding-bottom: 270px;
+  background-color: #0a0b12;
+  gap: 106px;
+}
+
+.why-col1,
+.why-col2 {
+  flex: 50%;
+}
+
+.why-col-2 {
+  display: flex;
+  align-items: right;
+}
+
+.why-col2 h1 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 46px;
+}
+
+.why-col2 h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 17px;
+}
+
+.why-col2 p {
+  color: #fafafa;
+  font-size: 16px;
+  max-width: 566px;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.why-col2 img {
+  margin-bottom: 22px;
+  max-width: 556px;
+  width: auto;
+  height: 316px;
+}
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .why {
+    flex-direction: column-reverse;
+    padding: 40px 40px;
+  }
+
+  .why-col1,
+  .why-col2 {
+    flex: 100%;
+  }
+
+  .why-col2{
+    padding: 30px;
+    padding-bottom: 0;
+  }
+
+  .why-col2 h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .why-col2 h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .why-col2 p {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: justify;
+    line-height: 24px;
+  }
+
+  .why-col2 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .why {
+    padding: 20px;
+  }
+
+  .why-col1,
+  .why-col2 {
+    flex: 100%;
+  }
+
+  .why-col2 h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .why-col2 h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .why-col2 p {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: justify;
+    line-height: 22px;
+  }
+
+  .why-col2 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .why {
+    padding: 20px;
+  }
+
+  .why-col1,
+  .why-col2 {
+    flex: 100%;
+  }
+
+  .why-col2 h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .why-col2 h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .why-col2 p {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .why-col2 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
