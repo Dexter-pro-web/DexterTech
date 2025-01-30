@@ -44,7 +44,7 @@
 }
 
 /* For screens smaller than 1024px */
-@media (max-width: 1024px) {
+@media (max-width: 1094px) {
   .why {
     flex-direction: column-reverse;
     padding: 40px 40px;
@@ -121,7 +121,7 @@
 /* For screens smaller than 480px */
 @media (max-width: 480px) {
   .why {
-    padding: 20px;
+    padding: 10px;
   }
 
   .why-col1,

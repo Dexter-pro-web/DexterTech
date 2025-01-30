@@ -737,6 +737,7 @@ h3 {
 
 .unlock-inner {
   display: flex;
+  gap: 20px;
 }
 
 .unlock-col1 {
@@ -781,7 +782,7 @@ h3 {
 }
 
 /* For screens smaller than 1024px */
-@media (max-width: 1024px) {
+@media (max-width: 1215px) {
   .unlock {
     padding: 0 40px; /* Adjust the padding for smaller screens */
     margin-top: 80px;

@@ -12,7 +12,15 @@ function Stats() {
       const step = (currentTime) => {
         if (!startTime) startTime = currentTime;
         const progress = Math.min((currentTime - startTime) / duration, 1);
-        el.innerHTML = `${Math.floor(progress * (end - start) + start)}<span>+</span>`;
+        const value = Math.floor(progress * (end - start) + start);
+
+        if (end >= 1000) {
+          // Show "100k" once the end value is reached
+          el.innerHTML = progress < 1 ? `${value}` : `${Math.floor(end / 1000)}k<span>+</span>`;
+        } else {
+          el.innerHTML = `${value}<span>+</span>`;
+        }
+
         if (progress < 1) requestAnimationFrame(step);
       };
 
@@ -49,8 +57,7 @@ function Stats() {
           <h3>EXPERIENCE</h3>
         </div>
         <div className="stat-number">
-          <h1 ref={(el) => (countUpRefs.current[0] = el)} data-end="100">0k<span>+</span>
-          </h1>
+          <h1 ref={(el) => (countUpRefs.current[0] = el)} data-end="100000">0<span>+</span></h1>
           <p>Hours of consultation</p>
         </div>
         <p className="stat-description">
@@ -63,8 +70,7 @@ function Stats() {
           <h3>EXPERTISE</h3>
         </div>
         <div className="stat-number">
-          <h1 ref={(el) => (countUpRefs.current[1] = el)} data-end="25">0<span>+</span>
-          </h1>
+          <h1 ref={(el) => (countUpRefs.current[1] = el)} data-end="25">0<span>+</span></h1>
           <p>Clients satisfied</p>
         </div>
         <p className="stat-description">
@@ -77,8 +83,7 @@ function Stats() {
           <h3>TRUST</h3>
         </div>
         <div className="stat-number">
-          <h1 ref={(el) => (countUpRefs.current[2] = el)} data-end="30">0<span>+</span>
-          </h1>
+          <h1 ref={(el) => (countUpRefs.current[2] = el)} data-end="30">0<span>+</span></h1>
           <p>Solutions delivered</p>
         </div>
         <p className="stat-description">

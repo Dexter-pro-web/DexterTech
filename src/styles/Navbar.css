@@ -84,6 +84,12 @@
   border-radius: 10px;
 }
 
+.disabled-link {
+  pointer-events: none;
+  color: grey; /* Optional: change the color to indicate it's disabled */
+  cursor: not-allowed;
+}
+
 /* For screens smaller than 1024px but larger than 768px */
 @media screen and (max-width: 1084px) {
   .navbar {

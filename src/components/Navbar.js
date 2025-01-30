@@ -5,13 +5,14 @@ import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true); // Disable certain links
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const closeMenu = () => {
-    setIsOpen(false);  // This will close the menu
+    setIsOpen(false);
   };
 
   return (
@@ -30,28 +31,43 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="/about" className="nav-link" activeClassName="active" onClick={closeMenu}>
-            About Us
+            About us
           </NavLink>
         </li>
         <li>
-          <NavLink to="/services" className="nav-link" activeClassName="active" onClick={closeMenu}>
+          <NavLink
+            to="/services"
+            className={`nav-link ${isDisabled ? "disabled-link" : ""}`}
+            activeClassName="active"
+            onClick={closeMenu}
+          >
             Services
           </NavLink>
         </li>
         <li>
-          <NavLink to="/partners" className="nav-link" activeClassName="active" onClick={closeMenu}>
+          <NavLink
+            to="/partners"
+            className={`nav-link ${isDisabled ? "disabled-link" : ""}`}
+            activeClassName="active"
+            onClick={closeMenu}
+          >
             Partners
           </NavLink>
         </li>
         <li>
-          <NavLink to="/careers" className="nav-link" activeClassName="active" onClick={closeMenu}>
+          <NavLink
+            to="/careers"
+            className={`nav-link ${isDisabled ? "disabled-link" : ""}`}
+            activeClassName="active"
+            onClick={closeMenu}
+          >
             Careers
           </NavLink>
         </li>
         <li>
           <NavLink
             to="null"
-            className="nav-link contact-btn"
+            className={`nav-link contact-btn ${isDisabled ? "disabled-link" : ""}`}
             activeClassName="active"
             onClick={closeMenu}
           >
