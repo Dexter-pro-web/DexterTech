@@ -1,6 +1,5 @@
 .stats-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
   margin: -128px auto 0;
@@ -128,17 +127,22 @@
   }
 }
 
-/* For screens smaller than 768px */
+@media (max-width: 1327px) {
+  .stats-section {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 768px) {
   .stats-section {
     flex-direction: column;
     padding: 0 20px;
-    align-items: center; /* Centers the stat cards */
+    align-items: center; 
   }
 
   .stat-card {
     padding: 20px;
-    max-width: 300px; /* Sets a maximum width of 300px for each card */
+    max-width: 300px; 
     width: 100%;
     margin-left: auto;
     margin-right: auto;

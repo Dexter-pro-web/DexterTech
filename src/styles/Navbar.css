@@ -123,7 +123,6 @@
     width: auto;
   }
 
-  /* Adjust the navbar links for mobile */
   .navbar-links {
     position: absolute;
     top: 90px;
@@ -133,14 +132,14 @@
     background-color: #0a0b12;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     display: none;
     padding-top: 20px;
-    overflow-y: auto; /* Enable scrolling if needed */
+    overflow-y: auto;
   }
 
   .navbar-links.active {
-    display: flex; /* Show the menu when active */
+    display: flex; 
   }
 
   .navbar-links li {
@@ -148,7 +147,7 @@
   }
 
   .navbar-links li a {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .hamburger {
@@ -156,7 +155,6 @@
   }
 }
 
-/* Hide horizontal overflow on mobile */
 body {
   overflow-x: hidden;
 }

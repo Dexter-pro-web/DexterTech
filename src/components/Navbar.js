@@ -5,7 +5,7 @@ import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDisabled, setIsDisabled] = useState(true); // Disable certain links
+  const [isDisabled, setIsDisabled] = useState(true); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

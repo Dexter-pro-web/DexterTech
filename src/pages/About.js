@@ -22,7 +22,7 @@ export default function About() {
       />
       <div className="container"></div>
 
-      <div className="hero2">
+      <div className="hero3">
         <div
           data-aos="fade-right"
           data-aos-duration="50000"
