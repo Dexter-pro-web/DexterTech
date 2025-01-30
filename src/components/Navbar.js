@@ -10,6 +10,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);  // This will close the menu
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -20,27 +24,27 @@ const Navbar = () => {
 
       <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
         <li>
-          <NavLink exact to="/" className="nav-link" activeClassName="active">
+          <NavLink exact to="/" className="nav-link" activeClassName="active" onClick={closeMenu}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-link" activeClassName="active">
+          <NavLink to="/about" className="nav-link" activeClassName="active" onClick={closeMenu}>
             About Us
           </NavLink>
         </li>
         <li>
-          <NavLink to="/services" className="nav-link" activeClassName="active">
+          <NavLink to="/services" className="nav-link" activeClassName="active" onClick={closeMenu}>
             Services
           </NavLink>
         </li>
         <li>
-          <NavLink to="/partners" className="nav-link" activeClassName="active">
+          <NavLink to="/partners" className="nav-link" activeClassName="active" onClick={closeMenu}>
             Partners
           </NavLink>
         </li>
         <li>
-          <NavLink to="/careers" className="nav-link" activeClassName="active">
+          <NavLink to="/careers" className="nav-link" activeClassName="active" onClick={closeMenu}>
             Careers
           </NavLink>
         </li>
@@ -49,6 +53,7 @@ const Navbar = () => {
             to="null"
             className="nav-link contact-btn"
             activeClassName="active"
+            onClick={closeMenu}
           >
             GET IN TOUCH
           </NavLink>

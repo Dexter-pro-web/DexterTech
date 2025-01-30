@@ -19,7 +19,7 @@ function Why({ title, imageSrc, subtitle, description }) {
         <Accordion />
       </div>
 
-      <div data-aos="fade-right" className="why-col2">
+      <div data-aos="zoom-in" className="why-col2">
         <h1>{title}</h1>
         <img src={imageSrc} alt={title} />
         <h3>{subtitle}</h3>

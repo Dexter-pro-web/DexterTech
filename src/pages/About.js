@@ -30,7 +30,7 @@ export default function About() {
         >
           <img id="test" src={techlines} alt="hero-image" />
           <img
-            style={{ width: "422px", height: "444px", marginTop: "30px" }}
+            style={{ width: "422px", height: "auto", marginTop: "30px" }}
             src="/images/who-we-are.png"
             alt="hero-background"
           />

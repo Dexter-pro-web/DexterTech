@@ -23,24 +23,22 @@ function Stats() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
             countUpRefs.current.forEach((ref) => {
               const endValue = parseInt(ref.getAttribute('data-end'), 10);
               animateCountUp(ref, 0, endValue, 2000);
             });
-          } else {
-            entry.target.classList.remove('visible'); // Remove to reset animation when out of view
           }
         });
       },
       { threshold: 0.5 }
     );
 
-    const elements = document.querySelectorAll('.stat-card');
-    elements.forEach(el => observer.observe(el));
+    if (statsSectionRef.current) {
+      observer.observe(statsSectionRef.current);
+    }
 
     return () => {
-      elements.forEach(el => observer.unobserve(el));
+      if (statsSectionRef.current) observer.disconnect();
     };
   }, []);
 

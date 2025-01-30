@@ -154,6 +154,11 @@
 
 /* For screens smaller than 480px */
 @media (max-width: 480px) {
+  .accordion {
+    margin: 0;
+    padding: 0 15px;
+    margin-bottom: 200px;
+  }
   .accordion-item {
     padding: 15px;
   }
@@ -168,6 +173,7 @@
 
   .accordion-content p {
     font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .accordion-icon {

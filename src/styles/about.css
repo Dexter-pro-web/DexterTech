@@ -89,17 +89,22 @@
 
 /* Responsive Styles for Screens Smaller than 768px */
 @media screen and (max-width: 768px) {
+
+  .drive {
+    padding: 40px 30px;
+  }
+
   .drive h1 {
     font-size: 22px; /* Further reduce heading size */
     margin-bottom: 24px; /* Further reduce margin */
   }
 
   .drive h3 {
-    font-size: 14px; /* Even smaller subheading */
+    font-size: 16px; /* Even smaller subheading */
   }
 
   .drive p {
-    font-size: 12px; /* Smaller text for mobile */
+    font-size: 13px; /* Smaller text for mobile */
     line-height: 18px; /* Adjust line height */
     margin-bottom: 10px; /* Further reduced margin */
   }
@@ -107,7 +112,7 @@
   .drive-col {
     margin-top: 60px;
     flex-direction: column;
-    gap: 20px; /* Smaller gap between the sections */
+    gap: 30px; /* Smaller gap between the sections */
   }
 
   .drive-col1,

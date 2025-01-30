@@ -15,10 +15,13 @@
   width: 191px;
 }
 
+
 .navbar-links {
   list-style: none;
   display: flex;
   gap: 32px;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-links li {
@@ -84,15 +87,14 @@
 /* For screens smaller than 1024px but larger than 768px */
 @media screen and (max-width: 1084px) {
   .navbar {
-    padding: 20px 50px; /* Adjust padding for smaller screens */
+    padding: 20px 50px;
   }
 
   .navbar-logo .logo {
-    height: 35px; /* Slightly smaller logo */
+    height: 35px;
     width: auto;
   }
 
-  /* Reduce font size as the screen size shrinks */
   .navbar-links li a {
     font-size: 14px;
   }
@@ -106,11 +108,12 @@
 /* For screens smaller than 768px */
 @media screen and (max-width: 809px) {
   .navbar {
-    padding: 15px 30px; /* Adjust padding for even smaller screens */
+    padding: 15px 30px;
+    height: 60px;
   }
 
   .navbar-logo .logo {
-    height: 30px; /* Smaller logo */
+    height: 30px;
     width: auto;
   }
 
@@ -119,28 +122,35 @@
     position: absolute;
     top: 90px;
     left: 0;
-    max-width: 94.5vw;
     width: 100%;
-    height: calc(100vh - 20px);
+    height: calc(100vh - 90px);
     background-color: #0a0b12;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     display: none;
     padding-top: 20px;
+    overflow-y: auto; /* Enable scrolling if needed */
   }
 
   .navbar-links.active {
     display: flex; /* Show the menu when active */
   }
 
-  /* Further reduce font size for mobile */
-  .navbar-links li a {
-    font-size: 12px; /* Smaller text for better fit */
+  .navbar-links li {
+    padding: 0;
   }
 
-  /* Show the hamburger menu on mobile */
+  .navbar-links li a {
+    font-size: 14px;
+  }
+
   .hamburger {
     display: flex;
   }
+}
+
+/* Hide horizontal overflow on mobile */
+body {
+  overflow-x: hidden;
 }
