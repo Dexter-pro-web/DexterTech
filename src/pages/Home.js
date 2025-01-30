@@ -34,7 +34,7 @@ export default function Home() {
 
       <div className="hero2">
         <div
-          data-aos="fade-right"
+          data-aos="zoom-in"
           data-aos-duration="50000"
           className="hero-img"
         >
@@ -75,7 +75,7 @@ export default function Home() {
         </p>
 
         <div className="offering1">
-          <div data-aos="fade-right" data-aos-duration="50000" className="col1">
+          <div data-aos="zoom-in" data-aos-duration="50000" className="col1">
             <h3>SOFTWARE DEVELOPMENT</h3>
             <p>
               {" "}
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
         </div>
         <div className="offering2">
-          <div data-aos="fade-right" data-aos-duration="50000" className="col3">
+          <div data-aos="zoom-in" data-aos-duration="50000" className="col3">
             <img src="/images/enterprise.png" alt="hero-background" />
             <h3>ENTERPRISE SOLUTIONS</h3>
             <p>
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
         <div className="offering1">
-          <div data-aos="fade-right" data-aos-duration="50000" className="col5">
+          <div data-aos="zoom-in" data-aos-duration="50000" className="col5">
             <h3>TECHNICAL SUPPORT</h3>
             <p>
               Our team of skilled technical support experts ensures your
@@ -197,7 +197,7 @@ export default function Home() {
         </p>
         <div className="unlock-inner">
           <div
-            data-aos="fade-right"
+            data-aos="zoom-in"
             data-aos-duration="50000"
             className="unlock-col1"
           >
