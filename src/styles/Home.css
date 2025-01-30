@@ -395,10 +395,10 @@ h3 {
 .col3 img {
   width: 85%;
   position: absolute;
-  top: -50%;
   left: 50%;
   transform: translateX(-50%);
   background: none;
+  margin-top: -50%;
 }
 
 .col3 h3 {
@@ -408,10 +408,10 @@ h3 {
 .col4 img {
   width: 55%;
   position: absolute;
-  top: -20px;
   left: 50%;
   transform: translateX(-50%);
   background: none;
+  margin-top: -15%;
 }
 
 .col4 h3 {
@@ -525,7 +525,6 @@ h3 {
     width: 80%;
     position: relative;
     transform: none;
-    border: 2px solid red;
     margin-top: -40%;
     transform: translateX(-50%); /* Adjust to perfectly center the image */
     margin-bottom: 0;
@@ -535,7 +534,6 @@ h3 {
     width: 80%;
     position: relative;
     transform: none;
-    border: 2px solid red;
     margin-top: -20%;
     transform: translateX(-50%); /* Adjust to perfectly center the image */
     margin-bottom: 0;
@@ -613,8 +611,10 @@ h3 {
   .col5,
   .col6 {
     width: 100%;
-    padding: 10px;
+    padding: 30px;
   }
+
+
 }
 
 
