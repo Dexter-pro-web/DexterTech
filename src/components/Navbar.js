@@ -5,7 +5,7 @@ import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDisabled, setIsDisabled] = useState(true); 
+  const [isDisabled, setIsDisabled] = useState(true); // Disable certain links
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -47,7 +47,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/partners"
-            className={`nav-link ${isDisabled ? "disabled-link" : ""}`}
+            className="nav-link"
             activeClassName="active"
             onClick={closeMenu}
           >

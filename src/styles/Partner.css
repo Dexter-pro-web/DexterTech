@@ -1,0 +1,265 @@
+.partner-hero {
+  max-height: 100vh;
+  padding: 72px 128px;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #0a0b12;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-hero h1{
+  margin-top: 101px;
+  font-size: 48px;
+  margin-bottom: 16px;
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+.partner-hero p{
+  color: white;
+  margin-bottom: 42px;
+  font-size: 18px;
+  max-width: 836px;
+}
+
+.partner-hero button{
+  font-family: 'MyCustomFont', sans-serif;
+  margin-bottom: 322px;
+}
+
+#hero3bg{
+  height: 419px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: -20%;
+  width: auto;
+}
+
+/* Default styles for larger screens (above 1024px) remain unchanged */
+
+/* For medium-sized devices (tablets, 768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .partner-hero {
+    padding: 56px 64px;
+  }
+
+  .partner-hero h1 {
+    font-size: 36px;
+    margin-top: 80px;
+  }
+
+  .partner-hero p {
+    font-size: 16px;
+    margin-bottom: 32px;
+    max-width: 90%;
+  }
+
+  .partner-hero button {
+    margin-bottom: 200px;
+    width: auto;
+  }
+
+  #hero3bg {
+    height: 300px;
+    bottom: -15%;
+  }
+}
+
+/* For small devices (mobile, 480px - 767px) */
+@media screen and (max-width: 767px) {
+  .partner-hero {
+    padding: 48px 32px;
+  }
+
+  .partner-hero h1 {
+    font-size: 28px;
+    margin-top: 60px;
+  }
+
+  .partner-hero p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .partner-hero button {
+    margin-bottom: 150px;
+  }
+
+  #hero3bg {
+    height: 250px;
+    bottom: -10%;
+  }
+}
+
+/* For very small devices (mobile, less than 480px) */
+@media screen and (max-width: 479px) {
+  .partner-hero {
+    padding: 32px 16px;
+  }
+
+  .partner-hero h1 {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .partner-hero p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .partner-hero button {
+    margin-bottom: 120px;
+  }
+
+  #hero3bg {
+    height: 200px;
+    bottom: -5%;
+  }
+}
+
+
+.main-partner {
+    padding: 40px 128px;
+    text-align: center;
+    background-color: #f7f8fc;
+    padding-bottom: 146px;
+  }
+  
+  .main-partner h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .main-partner h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .main-partner p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 16px;
+    color: #5f5f6d;
+  }
+
+  .main-partner .first-p{
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  
+  .main-partner-col {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 60px;
+  }
+  
+  .main-partner-col1,
+  .main-partner-col2, .main-partner-col3{
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 26px;
+    padding-bottom: 48px;
+    width: auto;
+    text-align: left;
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+    position: relative;
+  }
+  
+  .main-partner-col1::before,
+  .main-partner-col2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(
+      130deg,
+      #2212a0 80%,
+      #2c17ce 80%,
+      #2c17ce 82%,
+      #845554 85%,
+      #d0a225 100%
+    );
+  }
+  
+  @media screen and (max-width: 1024px) {
+
+    .main-partner{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .main-partner h1 {
+      font-size: 26px; /* Slightly smaller heading */
+      margin-bottom: 32px; /* Reduced margin */
+    }
+  
+    .main-partner h3 {
+      font-size: 16px; /* Smaller subheading */
+    }
+  
+    .main-partner p {
+      font-size: 14px; /* Smaller paragraph text */
+      line-height: 22px; /* Adjust line height for smaller text */
+      margin-bottom: 12px; /* Reduced margin */
+    }
+  
+    .main-partner-col {
+      gap: 20px; /* Smaller gap between columns */
+    }
+  
+    .main-partner-col1,
+    .main-partner-col2 {
+      padding-left: 16px; /* Reduced padding */
+      padding-right: 16px; /* Added right padding */
+      max-width: 90%; /* Allow more space on smaller screens */
+    }
+  }
+  
+  /* Responsive Styles for Screens Smaller than 768px */
+  @media screen and (max-width: 768px) {
+  
+    .main-partner {
+      padding: 40px 30px;
+    }
+  
+    .main-partner h1 {
+      font-size: 22px; /* Further reduce heading size */
+      margin-bottom: 24px; /* Further reduce margin */
+    }
+  
+    .main-partner h3 {
+      font-size: 16px; /* Even smaller subheading */
+    }
+  
+    .main-partner p {
+      font-size: 13px; /* Smaller text for mobile */
+      line-height: 18px; /* Adjust line height */
+      margin-bottom: 10px; /* Further reduced margin */
+    }
+  
+    .main-partner-col {
+      margin-top: 60px;
+      flex-direction: column;
+      gap: 30px; /* Smaller gap between the sections */
+      margin-bottom: 70px;
+    }
+  
+    .main-partner-col1,
+    .main-partner-col2 {
+      max-width: 100%; /* Make columns full-width */
+      padding-left: 12px; /* Further reduce padding */
+      padding-right: 12px; /* Further reduce padding */
+      padding-top: 16px; /* Reduced padding */
+      padding-bottom: 32px; /* Reduced bottom padding */
+    }
+  }
