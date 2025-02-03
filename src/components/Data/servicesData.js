@@ -34,4 +34,22 @@ export const ServiceData1 = {
     ],
   };
 
+  export const ServiceData3 = {
+    title: "ENTERPRISE SOLUTIONS",
+    description: "We provide tailored IT infrastructure, cloud services, and automation tools to streamline business operations.",
+    imageUrl: "/images/enterprise-img.png",
+    list_title:"OUR ENTERPRISE SERVICES",
+    services: [
+      { name: "Cloud Solutions", icon: "/icons/cloud-connection.png" },
+      { name: "IT Infrastructure Section", icon: "/icons/driver.png" },
+      { name: "Busness Process Automation", icon: "/icons/briefcase.png" },
+    ],
+    howWeWorkSteps: [
+      { number: "01", title: "CONSULT", description: "We analyze your workflow." },
+      { number: "02", title: "BUILD", description: "We design and implement solutions" },
+      { number: "03", title: "TRAIN", description: "We help your team adapt." },
+      { number: "04", title: "OPTIMIZE", description: "We fine-tune for better performance." },
+    ],
+  };
+
   

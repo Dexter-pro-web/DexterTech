@@ -108,12 +108,14 @@
     }
   
     .service-hero p {
-      font-size: 13px;
+      font-size: 14px;
       margin-bottom: 20px;
     }
   
     .service-hero button {
       margin-bottom: 120px;
+      width: auto;
+      font-size: 12px;
     }
   
     #hero3bg {

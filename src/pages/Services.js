@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "../styles/service.css"
 import ServiceType from "../components/service-type";
-import { ServiceData1, ServiceData2} from "../components/Data/servicesData";
+import { ServiceData1, ServiceData2, ServiceData3} from "../components/Data/servicesData";
 
 export default function Services() {
 
@@ -49,6 +49,15 @@ export default function Services() {
         services={ServiceData2.services}
         howWeWorkSteps={ServiceData2.howWeWorkSteps}
         imageUrl={ServiceData2.imageUrl}
+      />
+
+      <ServiceType
+        title={ServiceData3.title}
+        description={ServiceData3.description}
+        list_title={ServiceData3.list_title}
+        services={ServiceData3.services}
+        howWeWorkSteps={ServiceData3.howWeWorkSteps}
+        imageUrl={ServiceData3.imageUrl}
       />
 
       <div className="empty-div">
