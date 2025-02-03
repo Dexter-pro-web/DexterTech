@@ -37,7 +37,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/services"
-            className={`nav-link ${isDisabled ? "disabled-link" : ""}`}
+            className='nav-link'
             activeClassName="active"
             onClick={closeMenu}
           >

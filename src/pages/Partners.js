@@ -19,10 +19,10 @@ export default function Partners() {
     <div>
       <div className="partner-hero">
         <h1  data-aos="zoom-in"
-          data-aos-duration="50000">WE MAKE TECH WORK FOR YOU</h1>
+          data-aos-duration="50000">GROW FASTER, TOGETHER</h1>
         <p  data-aos="zoom-in"
-          data-aos-duration="50000">Tech doesn’t have to be complicated. We help businesses like yours run smoother, work faster, and grow smarter with tailored digital solutions. 
-          Whether you need custom software, IT security, or expert support, we’ve got you covered.</p>
+          data-aos-duration="50000">We believe in strong partnerships that create real impact. Whether you're a tech provider, 
+          consultant, or business looking to scale, we’re here to collaborate and build something great.</p>
           <button className="glow-on-hover"  data-aos="fade-up"
           data-aos-duration="50000">
           BOOK A FREE CONSULTATION
@@ -31,6 +31,8 @@ export default function Partners() {
         <img id="hero3bg" src='/images/hero3bg.png' alt="hero3 img" />
           
       </div>
+      <div className="container"></div>
+      
       <Partner_logo/>
       <div data-aos="fade-up" className="main-partner">
         <h1>WHY PARTNER WITH US</h1>

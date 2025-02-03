@@ -11,7 +11,6 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <AppRoutes />
-      <Footer />
     </Router>
   );
 }
