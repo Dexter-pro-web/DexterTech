@@ -47,7 +47,9 @@ const ServiceType = ({
           ))}
         </div>
       </div>
+      <div className="container3"></div>
     </section>
+    
   );
 };
 

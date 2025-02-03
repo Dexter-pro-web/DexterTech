@@ -75,6 +75,10 @@
     padding-bottom: 137px;
     background-color: #0A0B12;
     color: white;
+    background-image: url('/public/images/step-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .how-we-work h3 {
@@ -90,6 +94,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    position: relative;
+    overflow: hidden;
   }
   
   
@@ -167,6 +173,18 @@
     justify-content: left;
     margin-bottom: 30px;
   }
+
+  .service-type-image img{
+    max-width: 100%;
+  }
+
+  .how-we-work {
+    background-image: url('/public/images/step-bg.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 }
 
 @media (max-width: 1200px) {
