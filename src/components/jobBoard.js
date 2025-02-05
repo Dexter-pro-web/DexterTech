@@ -42,9 +42,9 @@ const JobBoard = () => {
           filteredJobs.map((job, index) => <JobCard key={index} job={job} />)
         ) : (
           <div className="no-jobs-message">
-            <img src="/icons/no-job-icon.png" alt="no-job"/>
+            <img src="/icons/no-job-icon.png" alt="no-job" />
             <p>No openings at the moment, but stay tuned!</p>
-            </div>
+          </div>
         )}
       </div>
     </div>

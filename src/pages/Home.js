@@ -1,4 +1,4 @@
-import "../styles/Home.css";
+import "../styles/PageStyle/Home.css";
 import image1 from "../assets/images/hero-img.png";
 import techlines from "../assets/images/tech-lines.png";
 import effect from "../assets/images/button-effects.png";
@@ -34,11 +34,7 @@ export default function Home() {
       <div className="container"></div>
 
       <div className="hero2">
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="50000"
-          className="hero-img"
-        >
+        <div data-aos="zoom-in" data-aos-duration="50000" className="hero-img">
           <img id="test" src={techlines} alt="hero-image" />
           <img src="/images/why-we-are.png" alt="hero-background" />
         </div>
@@ -155,7 +151,7 @@ export default function Home() {
 
       <div className="container2"></div>
 
-      <Partner_logo/>
+      <Partner_logo />
 
       <div className="container"></div>
 
@@ -213,9 +209,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div
-            className="unlock-col2"
-          >
+          <div className="unlock-col2">
             <img src="/images/unlock-img.png" alt="unlock image" />
           </div>
         </div>

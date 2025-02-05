@@ -5,7 +5,7 @@ import image1 from "../assets/images/about-hero-img.png";
 import techlines from "../assets/images/tech-lines.png";
 import effect from "../assets/images/button-effects.png";
 import Stats from "../components/stats";
-import "../styles/about.css";
+import "../styles/PageStyle/about.css";
 
 export default function About() {
   return (

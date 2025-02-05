@@ -15,7 +15,6 @@
   width: 191px;
 }
 
-
 .navbar-links {
   list-style: none;
   display: flex;
@@ -139,7 +138,7 @@
   }
 
   .navbar-links.active {
-    display: flex; 
+    display: flex;
   }
 
   .navbar-links li {

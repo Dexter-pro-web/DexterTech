@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/service-type.css';
+import "../styles/service-type.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -14,7 +14,6 @@ const ServiceType = ({
   style,
   index, // Add index as a prop
 }) => {
-
   useEffect(() => {
     AOS.init({
       once: false,
@@ -28,15 +27,15 @@ const ServiceType = ({
 
   return (
     <section className="service-type-section">
-      <div 
-        data-aos="fade-up" 
-        className={`service-type-content ${isEven ? 'reverse-column' : ''}`} 
-        style={style}>
-        
+      <div
+        data-aos="fade-up"
+        className={`service-type-content ${isEven ? "reverse-column" : ""}`}
+        style={style}
+      >
         <div className="service-type-image">
           <img src={imageUrl} alt="image alt" />
         </div>
-        
+
         <div className="service-type-text">
           <h1>{title}</h1>
           <p>{description}</p>

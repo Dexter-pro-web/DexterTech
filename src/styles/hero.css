@@ -246,7 +246,7 @@
   /* Adjusting the image container */
   .hero-img {
     position: relative;
-    width: 100%;  /* Full width of the container */
+    width: 100%; /* Full width of the container */
     display: flex; /* Flexbox for centering */
     justify-content: center; /* Center the image horizontally */
     height: auto; /* Adjust height based on the image */
@@ -269,7 +269,6 @@
     right: auto; /* Remove right offset */
   }
 }
-
 
 @media only screen and (max-width: 480px) {
   .hero {

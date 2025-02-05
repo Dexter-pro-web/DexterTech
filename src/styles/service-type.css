@@ -1,147 +1,145 @@
 .service-type-section {
-    width: 100%;
-    padding: 0;
-    background-color: white;
-  }
-  
+  width: 100%;
+  padding: 0;
+  background-color: white;
+}
+
+.service-type-content {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding: 120px 128px;
+}
+
+.service-type-image {
+  display: flex;
+  justify-content: center;
+  flex: 40%;
+}
+
+.service-type-image img {
+  max-width: 422px;
+  height: 281px;
+  border-radius: 10px;
+}
+
+.service-type-text h1 {
+  font-size: 30px;
+  font-family: "MyCustomFont", sans-serif;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.service-type-text h2 {
+  font-size: 18px;
+  font-family: "MyCustomFont", sans-serif;
+  margin-bottom: 16px;
+  line-height: 21.6px;
+}
+
+.service-type-text p {
+  font-size: 16px;
+  color: #5f5f6d;
+  margin-bottom: 26px;
+  line-height: 28px;
+}
+
+.service-type-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-type-text ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #5f5f6d;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.how-we-work {
+  padding: 53px 120px;
+  padding-bottom: 137px;
+  background-color: #0a0b12;
+  color: white;
+  background-image: url("/public/images/step-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-we-work h3 {
+  font-family: "MyCustomFont", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 23px;
+  color: white;
+}
+
+.work-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.work-step {
+  margin-top: 20px;
+  border: 1px solid #47546780;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.work-step h4 {
+  font-size: 92px;
+  font-family: "Inter";
+  line-height: 126.5px;
+  font-weight: 400;
+  margin-bottom: 73px;
+  margin-top: 0;
+  font-weight: bolder;
+}
+
+.work-step h5 {
+  color: #d0a225;
+  font-family: "MyCustomFont", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.work-step p {
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
   .service-type-content {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 40px;
-    padding: 120px 128px;
-  }
-
-  .service-type-image{
-    display: flex;
-    justify-content: center;
-    flex: 40%;
-  }
-  
-  .service-type-image img {
-    max-width: 422px;
-    height: 281px;
-    border-radius: 10px;
-  }
-  
-  .service-type-text h1 {
-    font-size: 30px;
-    font-family: 'MyCustomFont', sans-serif;
-    margin-bottom: 16px;
-    margin-top: 0;
-  }
-
-  .service-type-text h2 {
-    font-size: 18px;
-    font-family: 'MyCustomFont', sans-serif;
-    margin-bottom: 16px;
-    line-height: 21.6px;
-  }
-  
-  .service-type-text p {
-    font-size: 16px;
-    color: #5F5F6D;
-    margin-bottom: 26px;
-    line-height: 28px;
-  }
-  
-  .service-type-text ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .service-type-text ul li{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 27px;
-    color: #5F5F6D;
-  }
-  
-  .service-item {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  .service-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-
-  .how-we-work {
-    padding: 53px 120px;
-    padding-bottom: 137px;
-    background-color: #0A0B12;
-    color: white;
-    background-image: url('/public/images/step-bg.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .how-we-work h3 {
-    font-family: 'MyCustomFont', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 23px;
-    color: white;
-
-  }
-  
-  .work-steps {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    position: relative;
-    overflow: hidden;
-    padding: 2px;
   }
 
-  .work-step{
-    margin-top: 20px;
-    border: 1px solid #47546780;
-    padding: 20px;
-    border-radius: 16px;
+  .work-steps {
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  
-  .work-step h4 {
-    font-size: 92px;
-    font-family: 'Inter';
-    line-height: 126.5px;
-    font-weight: 400;
-    margin-bottom: 73px;
-    margin-top: 0;
-    font-weight: bolder;
-  }
-  
-  .work-step h5 {
-    color: #D0A225;
-    font-family: 'MyCustomFont', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 15px;
-  }
-  
-  .work-step p {
-    font-size: 14px;
-    line-height: 24px;
-    color: white;
-  }
-  
-  /* Media Queries for Responsive Design */
-  @media (min-width: 768px) {
-    .service-type-content {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .work-steps {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
+}
 
-  /* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
   .service-type-text {
     flex: 100%; /* Make the text take up full width on medium screens */
@@ -176,42 +174,40 @@
   }
 
   .service-type-image {
-    flex: 100%; 
+    flex: 100%;
     justify-content: left;
     margin-bottom: 30px;
   }
 
-  .service-type-image img{
+  .service-type-image img {
     max-width: 100%;
   }
 
   .how-we-work {
-    background-image: url('/public/images/step-bg.png');
+    background-image: url("/public/images/step-bg.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
   }
-
 }
 
 @media (max-width: 1200px) {
-.work-steps {
-  grid-template-columns: repeat(2, 1fr); 
-}
+  .work-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.work-step{
-  margin-top: 20px;
-  border: 1px solid #47546780;
-  padding: 20px;
-  border-radius: 16px;
-}
+  .work-step {
+    margin-top: 20px;
+    border: 1px solid #47546780;
+    padding: 20px;
+    border-radius: 16px;
+  }
 
-.work-step h4 {
-  font-size: 64px; 
-  margin-bottom: 0;
+  .work-step h4 {
+    font-size: 64px;
+    margin-bottom: 0;
+  }
 }
-}
-
 
 @media (max-width: 800px) {
   .service-type-content {
@@ -258,7 +254,7 @@
   }
 
   .work-step h4 {
-    font-size: 64px; 
+    font-size: 64px;
     margin-bottom: 0;
   }
 
@@ -272,10 +268,10 @@
 }
 
 @media (max-width: 730px) {
-.service-type-content {
-  gap: 10px; 
-  flex-direction: column !important;
-}
+  .service-type-content {
+    gap: 10px;
+    flex-direction: column !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -332,5 +328,3 @@
     font-size: 13px; /* Very small description */
   }
 }
-
-  

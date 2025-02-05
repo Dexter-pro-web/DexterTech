@@ -25,19 +25,30 @@ const Navbar = () => {
 
       <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
         <li>
-          <NavLink exact to="/" className="nav-link" activeClassName="active" onClick={closeMenu}>
+          <NavLink
+            exact
+            to="/"
+            className="nav-link"
+            activeClassName="active"
+            onClick={closeMenu}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-link" activeClassName="active" onClick={closeMenu}>
+          <NavLink
+            to="/about"
+            className="nav-link"
+            activeClassName="active"
+            onClick={closeMenu}
+          >
             About us
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/services"
-            className='nav-link'
+            className="nav-link"
             activeClassName="active"
             onClick={closeMenu}
           >
@@ -57,7 +68,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/careers"
-            className='nav-link'
+            className="nav-link"
             activeClassName="active"
             onClick={closeMenu}
           >
@@ -67,7 +78,9 @@ const Navbar = () => {
         <li>
           <NavLink
             to="null"
-            className={`nav-link contact-btn ${isDisabled ? "disabled-link" : ""}`}
+            className={`nav-link contact-btn ${
+              isDisabled ? "disabled-link" : ""
+            }`}
             activeClassName="active"
             onClick={closeMenu}
           >

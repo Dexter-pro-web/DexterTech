@@ -237,7 +237,6 @@
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
-
   .footer-container {
     padding: 0 20px;
   }
@@ -279,11 +278,11 @@
   }
 
   .footer-links p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .footer-links ul li {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .footer-bottom {
@@ -292,7 +291,7 @@
   }
 
   .footer-bottom p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .social-icons {
@@ -353,11 +352,11 @@
   }
 
   .footer-links p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .footer-links ul li {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .footer-bottom {
@@ -367,7 +366,7 @@
   }
 
   .footer-bottom p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .social-icons {
@@ -385,4 +384,3 @@
     bottom: -5px;
   }
 }
-

@@ -91,7 +91,6 @@
 
 /* Responsive Styles for Screens Smaller than 768px */
 @media screen and (max-width: 768px) {
-
   .drive {
     padding: 40px 30px;
   }
@@ -175,7 +174,6 @@
   font-family: "MyCustomFont", sans-serif;
 }
 
-
 @media only screen and (max-width: 1200px) {
   .hero3 {
     padding: 50px 80px;
@@ -203,7 +201,6 @@
     height: 350px;
   }
 }
-
 
 @media only screen and (max-width: 1059px) {
   .hero3 {
