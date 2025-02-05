@@ -1,5 +1,8 @@
 import React from "react";
 import '../styles/service-type.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ServiceType = ({
   title,
@@ -9,13 +12,31 @@ const ServiceType = ({
   howWeWorkSteps,
   imageUrl,
   style,
+  index, // Add index as a prop
 }) => {
+
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      duration: 700,
+      easing: "ease-in-out",
+    });
+  }, []);
+
+  // Add a condition for even index to apply the 'reverse-column' class
+  const isEven = index % 2 === 0;
+
   return (
     <section className="service-type-section">
-      <div className="service-type-content" style={style}>
+      <div 
+        data-aos="fade-up" 
+        className={`service-type-content ${isEven ? 'reverse-column' : ''}`} 
+        style={style}>
+        
         <div className="service-type-image">
           <img src={imageUrl} alt="image alt" />
         </div>
+        
         <div className="service-type-text">
           <h1>{title}</h1>
           <p>{description}</p>
@@ -36,8 +57,8 @@ const ServiceType = ({
       </div>
 
       <div className="how-we-work">
-        <h3>How We Work</h3>
-        <div className="work-steps">
+        <h3 data-aos="fade-up">How We Work</h3>
+        <div data-aos="zoom-in" className="work-steps">
           {howWeWorkSteps.map((step, index) => (
             <div key={index} className="work-step">
               <h4>{step.number}</h4>
@@ -49,7 +70,6 @@ const ServiceType = ({
       </div>
       <div className="container3"></div>
     </section>
-    
   );
 };
 

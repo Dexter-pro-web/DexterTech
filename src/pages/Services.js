@@ -2,68 +2,60 @@ import effect from "../assets/images/button-effects.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import "../styles/service.css"
+import "../styles/service.css";
 import ServiceType from "../components/service-type";
-import { ServiceData1, ServiceData2, ServiceData3} from "../components/Data/servicesData";
+import { ServiceData1, ServiceData2, ServiceData3, ServiceData4, ServiceData5, ServiceData6 } from "../components/Data/servicesData";
 
 export default function Services() {
 
-        useEffect(() => {
-          AOS.init({
-            once: false,
-            duration: 700,
-            easing: "ease-in-out",
-          });
-        }, []);
-        
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      duration: 700,
+      easing: "ease-in-out",
+    });
+  }, []);
+
+  // Array to hold all service data
+  const serviceDataArray = [
+    ServiceData1,
+    ServiceData2,
+    ServiceData3,
+    ServiceData4,
+    ServiceData5,
+    ServiceData6
+  ];
+
   return (
     <div>
       <div className="service-hero">
-        <h1  data-aos="zoom-in"
-          data-aos-duration="50000">WE MAKE TECH WORK FOR YOU</h1>
-        <p  data-aos="zoom-in"
-          data-aos-duration="50000">Tech doesn’t have to be complicated. We help businesses like yours run smoother, work faster, and grow smarter with tailored digital solutions. 
-          Whether you need custom software, IT security, or expert support, we’ve got you covered.</p>
-          <button className="glow-on-hover"  data-aos="fade-up"
-          data-aos-duration="50000">
+        <h1 data-aos="zoom-in" data-aos-duration="50000">WE MAKE TECH WORK FOR YOU</h1>
+        <p data-aos="zoom-in" data-aos-duration="50000">
+          Tech doesn’t have to be complicated. We help businesses like yours run smoother, work faster, and grow smarter with tailored digital solutions. Whether you need custom software, IT security, or expert support, we’ve got you covered.
+        </p>
+        <button className="glow-on-hover" data-aos="fade-up" data-aos-duration="50000">
           BOOK A FREE CONSULTATION
           <img id="button-effect" src={effect} alt="button effect" />
-        </button >
+        </button>
         <img id="hero3bg" src='/images/hero3bg.png' alt="hero3 img" />
       </div>
+
       <div className="container"></div>
 
-      <ServiceType
-        title={ServiceData1.title}
-        description={ServiceData1.description}
-        list_title={ServiceData1.list_title}
-        services={ServiceData1.services}
-        howWeWorkSteps={ServiceData1.howWeWorkSteps}
-        imageUrl={ServiceData1.imageUrl}
-      />
+      {serviceDataArray.map((service, index) => (
+        <ServiceType
+          key={index}
+          title={service.title}
+          description={service.description}
+          list_title={service.list_title}
+          services={service.services}
+          howWeWorkSteps={service.howWeWorkSteps}
+          imageUrl={service.imageUrl}
+          style={index % 2 != 0 ? { flexDirection: 'row-reverse' } : {}}
+        />
+      ))}
 
-      <ServiceType
-        title={ServiceData2.title}
-        description={ServiceData2.description}
-        list_title={ServiceData2.list_title}
-        services={ServiceData2.services}
-        howWeWorkSteps={ServiceData2.howWeWorkSteps}
-        imageUrl={ServiceData2.imageUrl}
-      />
-
-      <ServiceType
-        title={ServiceData3.title}
-        description={ServiceData3.description}
-        list_title={ServiceData3.list_title}
-        services={ServiceData3.services}
-        howWeWorkSteps={ServiceData3.howWeWorkSteps}
-        imageUrl={ServiceData3.imageUrl}
-      />
-
-      <div className="empty-div">
-
-      </div>
-      
+      <div className="empty-div"></div>
     </div>
   );
 }
