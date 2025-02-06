@@ -21,7 +21,6 @@ const JobBoard = () => {
 
   return (
     <div className="job-board">
-      {/* Filter buttons */}
       <div className="filter-buttons">
         {categories.map((category, index) => (
           <button
@@ -36,12 +35,11 @@ const JobBoard = () => {
         ))}
       </div>
 
-      {/* Job listings or No Jobs message */}
       <div className="job-listings">
         {filteredJobs.length > 0 ? (
           filteredJobs.map((job, index) => <JobCard key={index} job={job} />)
         ) : (
-          <div className="no-jobs-message">
+          <div data-aos="fade-in" className="no-jobs-message">
             <img src="/icons/no-job-icon.png" alt="no-job" />
             <p>No openings at the moment, but stay tuned!</p>
           </div>

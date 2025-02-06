@@ -45,7 +45,8 @@ const Footer = () => {
             <div>
               <p>Company</p>
               <ul>
-                <li>Contact us</li>
+                <li><a href="tel:08165353645">08165353645</a></li>
+                <li><a href="mailto:dexterprotechnologylimited@gmail.com">dexterprotechnologylimited@gmail.com</a></li>
                 <li>36b Jay Jay Oladimeji Close, Ikate, Lekki, Lagos State</li>
               </ul>
             </div>
@@ -56,23 +57,23 @@ const Footer = () => {
           <p>&copy; 2024 Dexterpro Technologies.</p>
           <div className="social-icons">
             <a
-              href="https://twitter.com"
+              href="https://x.com"
               className="social-icon"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-x"></i>
             </a>
             <a
-              href="https://facebook.com"
+              href="https://instagram.com/dexterpro_ltd"
               className="social-icon"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-instagram"></i>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/company/dexterpro-technology-limited/"
               className="social-icon"
               target="_blank"
               rel="noopener noreferrer"

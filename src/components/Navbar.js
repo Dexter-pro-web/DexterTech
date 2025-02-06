@@ -76,16 +76,13 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="null"
-            className={`nav-link contact-btn ${
-              isDisabled ? "disabled-link" : ""
-            }`}
-            activeClassName="active"
-            onClick={closeMenu}
-          >
-            GET IN TOUCH
-          </NavLink>
+        <a
+          href="mailto:dexterprotechnologylimited@gmail.com"
+          className="nav-link contact-btn"
+          onClick={closeMenu}
+        >
+          GET IN TOUCH
+        </a>
         </li>
       </ul>
 

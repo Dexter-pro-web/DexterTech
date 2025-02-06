@@ -28,6 +28,7 @@ function Clients() {
         <img src="/logos/one-acre-fund.png" alt="" />
         <img src="/logos/isn.png" alt="" />
         <img src="/logos/fmdq.png" alt="" />
+        <img src="/logos/redleaf.png" alt="" />
       </div>
     </div>
   );

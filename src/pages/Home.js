@@ -73,6 +73,7 @@ export default function Home() {
 
         <div className="offering1">
           <div data-aos="zoom-in" data-aos-duration="50000" className="col1">
+            <div>
             <h3>SOFTWARE DEVELOPMENT</h3>
             <p>
               {" "}
@@ -81,6 +82,7 @@ export default function Home() {
               integrate specific and tailored solutions to streamline core
               processes driving significant value and impact for your business.
             </p>
+            </div>
             <img src="/images/software-dev.png" alt="hero-background" />
           </div>
           <div data-aos="fade-left" data-aos-duration="50000" className="col2">
