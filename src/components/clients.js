@@ -25,6 +25,9 @@ function Clients() {
         <img src="/logos/misa.png" alt="" />
         <img src="/logos/akatech.png" alt="" />
         <img src="/logos/perlex.png" alt="" />
+        <img src="/logos/one-acre-fund.png" alt="" />
+        <img src="/logos/isn.png" alt="" />
+        <img src="/logos/fmdq.png" alt="" />
       </div>
     </div>
   );

@@ -82,7 +82,7 @@
   }
 
   .partner-hero p {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 24px;
   }
 
@@ -108,7 +108,7 @@
   }
 
   .partner-hero p {
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 20px;
   }
 
@@ -207,7 +207,7 @@
   }
 
   .main-partner p {
-    font-size: 14px; /* Smaller paragraph text */
+    font-size: 15px; /* Smaller paragraph text */
     line-height: 22px; /* Adjust line height for smaller text */
     margin-bottom: 12px; /* Reduced margin */
   }
@@ -240,7 +240,7 @@
   }
 
   .main-partner p {
-    font-size: 13px; /* Smaller text for mobile */
+    font-size: 15px; /* Smaller text for mobile */
     line-height: 18px; /* Adjust line height */
     margin-bottom: 10px; /* Further reduced margin */
   }
@@ -259,5 +259,13 @@
     padding-right: 12px; /* Further reduce padding */
     padding-top: 16px; /* Reduced padding */
     padding-bottom: 32px; /* Reduced bottom padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-partner p {
+    font-size: 14px; /* Smaller text for mobile */
+    line-height: 18px; /* Adjust line height */
+    margin-bottom: 10px; /* Further reduced margin */
   }
 }
