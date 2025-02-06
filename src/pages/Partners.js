@@ -55,7 +55,7 @@ export default function Partners() {
             <p>Work with a team that understands tech and business</p>
           </div>
           <div className="main-partner-col2">
-            <h3>OUUNLOCK MORE OPPURTUNITIES</h3>
+            <h3>UNLOCK MORE OPPURTUNITIES</h3>
             <p>Collaborate on projects that create real value.</p>
           </div>
         </div>

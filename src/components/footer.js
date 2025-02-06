@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/footer.css";
 import logo from "../assets/images/logo.png";
 import effect from "../assets/images/button-effects.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,10 +35,11 @@ const Footer = () => {
             <div>
               <p>Product and Services</p>
               <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Services</li>
-                <li>Testimonials</li>
+                <li><NavLink exact to="/">Home</NavLink></li>
+                <li><NavLink exact to="/about">About us</NavLink></li>
+                <li><NavLink exact to="/services">Services</NavLink></li>
+                <li><NavLink exact to="/partners">Partners</NavLink></li>
+                <li><NavLink exact to="/careers">Careers</NavLink></li>
               </ul>
             </div>
             <div>

@@ -155,7 +155,11 @@
   }
 
   .service-type-text p {
-    font-size: 14px; /* Smaller text for readability on smaller screens */
+    font-size: 16px; /* Smaller text for readability on smaller screens */
+  }
+
+  .service-type-text ul li{
+    font-size: 16px;
   }
 
   .service-item {
@@ -235,8 +239,12 @@
     font-size: 14px; /* Smaller paragraph text */
   }
 
+  .service-type-text ul li{
+    font-size: 14px;
+  }
+
   .service-item {
-    font-size: 12px; /* Smaller font for service items */
+    font-size: 1px; /* Smaller font for service items */
   }
 
   .service-icon {
@@ -259,11 +267,11 @@
   }
 
   .work-step h5 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .work-step p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -285,15 +293,19 @@
   }
 
   .service-type-text h2 {
-    font-size: 12px; /* Very small subtitle */
+    font-size: 15px; /* Very small subtitle */
   }
 
   .service-type-text p {
-    font-size: 13px; /* Very small text */
+    font-size: 14px; /* Very small text */
+  }
+
+  .service-type-text ul li{
+    font-size: 14px;
   }
 
   .service-item {
-    font-size: 10px; /* Very small font for service items */
+    font-size: 14px; /* Very small font for service items */
   }
 
   .service-icon {
@@ -321,10 +333,10 @@
 
   .work-step h5 {
     margin-top: 0;
-    font-size: 14px; /* Smaller titles for work steps */
+    font-size: 15px; /* Smaller titles for work steps */
   }
 
   .work-step p {
-    font-size: 13px; /* Very small description */
+    font-size: 14px; /* Very small description */
   }
 }
