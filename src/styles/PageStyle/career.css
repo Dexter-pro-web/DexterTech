@@ -48,6 +48,11 @@
     margin-bottom: 40px;
     max-width: 90%;
   }
+
+  #career-img {
+    max-width: 100%; /* On smaller screens, the image will take the full width */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
 
 /* For small devices (mobile, 480px - 767px) */
