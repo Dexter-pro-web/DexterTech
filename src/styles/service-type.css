@@ -13,7 +13,7 @@
 
 .service-type-image {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex: 40%;
 }
 
@@ -127,6 +127,7 @@
   line-height: 24px;
   color: white;
 }
+
 
 /* Media Queries for Responsive Design */
 @media (min-width: 768px) {

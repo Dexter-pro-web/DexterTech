@@ -122,6 +122,26 @@
   overflow: hidden;
 }
 
+.hero-text,
+.hero2-img {
+  flex: 50;
+  background: none;
+}
+
+.hero2-img {
+  display: flex;
+  justify-content: start;
+}
+
+.hero2-img #main-img {
+  max-width: 372px;
+  width: auto;
+  max-height: 394px;
+  height: auto;
+  border-radius: 16px;
+  z-index: 1;
+}
+
 .hero2 #test {
   position: absolute;
   left: -500px;
@@ -162,6 +182,7 @@
   .hero2 {
     padding: 50px 80px;
     height: auto; /* Let height adjust based on content */
+    gap: 20px;
   }
 
   .hero2 .hero-text h1 {
@@ -186,15 +207,19 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 860px) {
   .hero2 {
     flex-direction: column-reverse;
     padding: 40px;
     height: auto;
   }
 
-  .hero2 .hero-img {
-    position: relative;
+  .hero2-img{
+    justify-content: center;
+  }
+
+  #main-img {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
@@ -225,11 +250,7 @@
 
   /* Adjust the test image */
   .hero2 #test {
-    position: relative;
-    width: 100%;
-    height: auto;
-    left: 0;
-    margin-bottom: 20px;
+    display: none;
   }
 }
 
@@ -447,6 +468,7 @@ h3 {
 @media (max-width: 1000px) {
   .offerings {
     padding: 0 80px;
+    padding-top: 70px;
   }
 
   .offerings h1 {
@@ -547,6 +569,7 @@ h3 {
 @media (max-width: 768px) {
   .offerings {
     padding: 0 40px;
+    padding-top: 70px;
   }
 
   .offerings h1 {
@@ -580,6 +603,7 @@ h3 {
 @media (max-width: 480px) {
   .offerings {
     padding: 0 20px;
+    padding-top: 50px;
   }
 
   .offerings h1 {
@@ -640,11 +664,20 @@ h3 {
 
 .unlock {
   padding: 0 128px;
-}
-
-.unlock {
   text-align: center;
   margin-top: 120px;
+}
+
+.unlock-container {
+  height: 9px; /* Adjust height as needed */
+  background: linear-gradient(
+    110deg,
+    #DD9828 20%,
+        /* 10% black */ #E6E7F0 20%,
+    /* 10% black */ #E6E7F0 80%,
+    /* Start the gold at 10% */ #136dec 80%
+  );
+  margin-bottom: 68px !important;
 }
 
 .unlock-inner {

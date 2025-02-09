@@ -19,10 +19,12 @@ const Footer = () => {
           We're here to power your business growth. Let’s build your digital
           future together!
         </p>
+        <a href="mailto:dexterprotechnologylimited@gmail.com">
         <button className="cta-button ">
           CLAIM YOUR FREE STRATEGY SESSION{" "}
           <img id="button-effect" src={effect} alt="hero-image" />
         </button>
+        </a>
       </div>
 
       <footer className="footer">
@@ -54,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Dexterpro Technologies.</p>
+          <p>&copy; 2025 Dexterpro Technologies.</p>
           <div className="social-icons">
             <a
               href="https://x.com"

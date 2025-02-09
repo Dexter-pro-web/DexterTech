@@ -139,7 +139,7 @@
 
 .hero-img {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   position: relative;
 }
 
@@ -229,7 +229,7 @@
   }
 
   .hero-text p {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 24px;
   }
 

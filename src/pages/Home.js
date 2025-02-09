@@ -34,9 +34,9 @@ export default function Home() {
       <div className="container"></div>
 
       <div className="hero2">
-        <div data-aos="zoom-in" data-aos-duration="50000" className="hero-img">
+        <div data-aos="zoom-in" data-aos-duration="50000" className="hero2-img">
           <img id="test" src={techlines} alt="hero-image" />
-          <img src="/images/why-we-are.png" alt="hero-background" />
+          <img id="main-img" src="/images/why-we-are.png" alt="hero-background" />
         </div>
         <div
           data-aos="fade-left"
@@ -170,9 +170,10 @@ export default function Home() {
         <h1>
           UNLOCK YOUR POTENTIAL WITH <br /> DEXTERPRO ACADEMY
         </h1>
-        <p style={{ marginBottom: "91px" }}>
+        <p style={{ marginBottom: "35px" }}>
           Empowering Africa's Next Generation of Tech Leaders
         </p>
+        <div className="unlock-container" style={{width:"160px", margin:'0 auto'}}></div>
         <div className="unlock-inner">
           <div
             data-aos="zoom-in"
@@ -202,6 +203,7 @@ export default function Home() {
               range of courses to meet the unique needs of learners of all
               levels.
             </p>
+            <a href="https://www.dexterproacademy.com" target="blank">
             <button
               className="glow-on-hover"
               style={{ width: "auto", fontFamily: "MyCustomFont" }}
@@ -209,6 +211,7 @@ export default function Home() {
               VISIT WEBSITE{" "}
               <img id="button-effect" src={effect} alt="hero-image" />{" "}
             </button>
+            </a>
           </div>
 
           <div className="unlock-col2">

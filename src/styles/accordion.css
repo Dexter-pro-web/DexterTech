@@ -48,7 +48,7 @@
 
 /* Transition of the icon when the accordion is expanded or collapsed */
 .accordion-item.active .accordion-icon {
-  transform: rotate(180deg); /* Rotates the icon when active */
+  transform: rotate(360deg); /* Rotates the icon when active */
 }
 
 .accordion-content {

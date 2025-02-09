@@ -26,13 +26,13 @@ export default function About() {
         <div
           data-aos="fade-right"
           data-aos-duration="50000"
-          className="hero-img"
+          className="hero3-img"
         >
           <img id="test" src={techlines} alt="hero-image" />
           <img
-            style={{ width: "422px", height: "auto", marginTop: "30px" }}
             src="/images/who-we-are.png"
             alt="hero-background"
+            id="main-img"
           />
         </div>
         <div

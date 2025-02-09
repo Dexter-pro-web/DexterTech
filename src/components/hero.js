@@ -25,10 +25,12 @@ const Hero = ({
       <div data-aos="fade-up" data-aos-duration="50000" className="hero-text">
         <h1>{title}</h1>
         <p>{description}</p>
+        <a href="mailto:dexterprotechnologylimited@gmail.com">
         <button className="glow-on-hover">
           {buttonText}{" "}
           <img id="button-effect" src={effectImage} alt="button effect" />
         </button>
+        </a>
       </div>
       <div data-aos="fade-left" className="hero-img">
         <img id="test" src={techLinesImage} alt="hero image" />

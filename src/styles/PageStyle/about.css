@@ -68,11 +68,11 @@
   }
 
   .drive h3 {
-    font-size: 16px; /* Smaller subheading */
+    font-size: 18px; /* Smaller subheading */
   }
 
   .drive p {
-    font-size: 14px; /* Smaller paragraph text */
+    font-size: 16px; /* Smaller paragraph text */
     line-height: 22px; /* Adjust line height for smaller text */
     margin-bottom: 12px; /* Reduced margin */
   }
@@ -105,7 +105,7 @@
   }
 
   .drive p {
-    font-size: 13px; /* Smaller text for mobile */
+    font-size: 14px; /* Smaller text for mobile */
     line-height: 18px; /* Adjust line height */
     margin-bottom: 10px; /* Further reduced margin */
   }
@@ -136,6 +136,25 @@
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
+}
+
+.hero-text,
+.hero3-img {
+  flex: 50;
+  background: none;
+}
+
+.hero3-img {
+  display: flex;
+  justify-content: start;
+}
+
+.hero3-img #main-img {
+  width: 422px;
+  height: 444px;
+  border-radius: 16px;
+  z-index: 1;
+  margin-top: 30px;
 }
 
 .hero3 #test {
@@ -178,6 +197,7 @@
   .hero3 {
     padding: 50px 80px;
     height: auto; /* Let height adjust based on content */
+    gap: 20px;
   }
 
   .hero3 .hero-text h1 {
@@ -202,19 +222,25 @@
   }
 }
 
-@media only screen and (max-width: 1059px) {
+
+@media only screen and (max-width: 1050px) {
   .hero3 {
     flex-direction: column-reverse;
-    padding: 40px;
+    padding: 50px 80px;
     height: auto;
   }
 
-  .hero3 .hero-img {
-    position: relative;
-    width: 100%;
+  .hero3-img{
+    justify-content: center;
+  }
+
+
+  #main-img {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    width: 100% !important;
+    height: 550px !important;
   }
 
   .hero3 .hero-text {
@@ -241,18 +267,29 @@
 
   /* Adjust the test image */
   .hero3 #test {
-    position: relative;
-    width: 100%;
-    height: auto;
-    left: 0;
-    margin-bottom: 20px;
+    display: none;
   }
+}
+
+@media only screen and (max-width: 860px) {
+  .hero3 {
+    flex-direction: column-reverse;
+    padding: 40px;
+    height: auto;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
   .hero3 {
     padding: 30px;
     height: auto;
+  }
+
+  #main-img {
+    width: 100% !important;
+    height: 300px !important;
+    border: 2px solid red;
   }
 
   .hero3 .hero-text h1 {

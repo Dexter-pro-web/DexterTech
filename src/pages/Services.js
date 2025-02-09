@@ -66,7 +66,7 @@ export default function Services() {
           services={service.services}
           howWeWorkSteps={service.howWeWorkSteps}
           imageUrl={service.imageUrl}
-          style={index % 2 != 0 ? { flexDirection: "row-reverse" } : {}}
+          style={index % 2 != 0 ? { flexDirection: "row-reverse"} : {}}
         />
       ))}
 

@@ -22,14 +22,13 @@ const ServiceType = ({
     });
   }, []);
 
-  // Add a condition for even index to apply the 'reverse-column' class
   const isEven = index % 2 === 0;
 
   return (
     <section className="service-type-section">
       <div
         data-aos="fade-up"
-        className={`service-type-content ${isEven ? "reverse-column" : ""}`}
+        className="service-type-content"
         style={style}
       >
         <div className="service-type-image">
