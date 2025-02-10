@@ -53,6 +53,8 @@
   font-weight: bold;
   position: relative;
   z-index: 10;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
 }
 
 .glow-on-hover {
@@ -195,13 +197,14 @@
   }
 
   .hero button {
-    width: 260px;
+    width: 300px;
     font-size: 14px;
+    height: 47px;
   }
 
   .glow-on-hover {
-    width: 200px;
-    height: 45px;
+    width: auto;
+    height: auto;
   }
 
   #test {
@@ -239,13 +242,14 @@
   }
 
   .hero button {
-    width: auto;
+    width: 300px;
     font-size: 13px;
+    height: 47px;
   }
 
   .glow-on-hover {
-    width: 180px;
-    height: 40px;
+    width: auto;
+    height: auto;
   }
 
   /* Adjusting the image container */
@@ -290,13 +294,14 @@
   }
 
   .hero button {
-    width: auto;
+    width: 250px;
     font-size: 12px;
+    height: 47px;
   }
 
   .glow-on-hover {
-    width: 160px;
-    height: 35px;
+    width: auto;
+    height: auto;
   }
 
   #test {

@@ -30,6 +30,11 @@
 .partner-hero button {
   font-family: "MyCustomFont", sans-serif;
   margin-bottom: 322px;
+  width: 300px;
+  height: 47px;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 #hero3bg {

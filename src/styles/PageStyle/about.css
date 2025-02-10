@@ -184,15 +184,6 @@
   font-size: 16px;
 }
 
-.hero3 button {
-  width: auto;
-  padding: 14px 16px;
-  height: 47px;
-  width: 140px;
-  font-size: 16px;
-  font-family: "MyCustomFont", sans-serif;
-}
-
 @media only screen and (max-width: 1200px) {
   .hero3 {
     padding: 50px 80px;
@@ -208,11 +199,6 @@
     font-size: 14px;
     line-height: 24px;
     text-align: justify;
-  }
-
-  .hero3 button {
-    font-size: 14px;
-    width: 120px;
   }
 
   .hero3 #test {
@@ -259,12 +245,6 @@
     line-height: 22px;
   }
 
-  .hero3 button {
-    width: 160px;
-    font-size: 14px;
-    height: 40px;
-  }
-
   /* Adjust the test image */
   .hero3 #test {
     display: none;
@@ -298,12 +278,6 @@
   .hero3 .hero-text p {
     font-size: 14px;
     line-height: 25px;
-  }
-
-  .hero3 button {
-    width: 140px;
-    font-size: 12px;
-    height: 38px;
   }
 
   .hero3 #test {

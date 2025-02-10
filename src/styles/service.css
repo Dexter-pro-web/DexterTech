@@ -28,8 +28,18 @@
 }
 
 .service-hero button {
-  font-family: "MyCustomFont", sans-serif;
+width: 300px;
+  height: 47px;
+  color: white;
+  background-color: #136dec;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
   margin-bottom: 322px;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
 }
 
 #hero3bg {
@@ -61,7 +71,9 @@
 
   .service-hero button {
     margin-bottom: 200px;
-    width: auto;
+    width: 300px;
+    font-size: 14px;
+    height: 47px;
   }
 
   #hero3bg {
@@ -88,6 +100,9 @@
 
   .service-hero button {
     margin-bottom: 150px;
+    width: 300px;
+    font-size: 14px;
+    height: 47px;
   }
 
   #hero3bg {
@@ -115,6 +130,8 @@
   .service-hero button {
     margin-bottom: 120px;
     width: auto;
+    font-size: 14px;
+    height: 47px;
     font-size: 12px;
   }
 

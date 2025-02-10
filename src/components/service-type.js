@@ -12,7 +12,8 @@ const ServiceType = ({
   howWeWorkSteps,
   imageUrl,
   style,
-  index, // Add index as a prop
+  index,
+  info, // Add index as a prop
 }) => {
   useEffect(() => {
     AOS.init({
@@ -47,7 +48,7 @@ const ServiceType = ({
                   alt={service.name}
                   className="service-icon"
                 />
-                {service.name}
+                {service.name}: {service.info}
               </li>
             ))}
           </ul>

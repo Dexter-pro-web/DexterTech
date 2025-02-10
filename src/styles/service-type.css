@@ -76,8 +76,8 @@
   color: white;
   background-image: url("/public/images/step-bg.png");
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: repeat;
+  background-position: bottom center;
 }
 
 .how-we-work h3 {
@@ -192,7 +192,8 @@
     background-image: url("/public/images/step-bg.png");
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
+    background-position-y: calc(100% + 50px);
   }
 }
 
