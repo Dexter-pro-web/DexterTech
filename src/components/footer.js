@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/footer.css";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/dexter-updated-logo.png";
 import effect from "../assets/images/button-effects.png";
 import { NavLink } from "react-router-dom";
 
