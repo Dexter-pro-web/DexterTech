@@ -77,7 +77,7 @@ const Navbar = () => {
         </li>
         <li>
         <a
-          href="mailto:dexterprotechnologylimited@gmail.com"
+          href="mailto:info@dexterprotechnology.com"
           className="nav-link contact-btn"
           onClick={closeMenu}
         >

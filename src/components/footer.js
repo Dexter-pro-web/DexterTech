@@ -19,7 +19,7 @@ const Footer = () => {
           We're here to power your business growth. Let’s build your digital
           future together!
         </p>
-        <a href="mailto:dexterprotechnologylimited@gmail.com">
+        <a href="mailto:info@dexterprotechnology.com">
         <button className="cta-button ">
           CLAIM YOUR FREE STRATEGY SESSION{" "}
           <img id="button-effect" src={effect} alt="hero-image" />
@@ -48,7 +48,7 @@ const Footer = () => {
               <p>Company</p>
               <ul>
                 <li><a href="tel:08165353645">08165353645</a></li>
-                <li><a href="mailto:dexterprotechnologylimited@gmail.com">dexterprotechnologylimited@gmail.com</a></li>
+                <li><a href="mailto:dexterprotechnologylimited@gmail.com">info@dexterprotechnology.com</a></li>
                 <li>36b Jay Jay Oladimeji Close, Ikate, Lekki, Lagos State</li>
               </ul>
             </div>
