@@ -47,7 +47,8 @@ const Footer = () => {
             <div>
               <p>Company</p>
               <ul>
-                <li><a href="tel:08165353645">08165353645</a></li>
+                <li><a href="tel:07066645933">07066645933</a></li>
+                <li><a href="tel:08141360482">08141360482</a></li>
                 <li><a href="mailto:dexterprotechnologylimited@gmail.com">info@dexterprotechnology.com</a></li>
                 <li>36b Jay Jay Oladimeji Close, Ikate, Lekki, Lagos State</li>
               </ul>
