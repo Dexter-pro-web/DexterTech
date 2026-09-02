@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/accordion.css";
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,21 +35,34 @@ const Accordion = () => {
   ];
 
   return (
-    <div className="accordion">
+    <div className="mb-32 lg:mb-0 lg:p-4 px-4 sm:px-6 md:px-8">
       {accordionData.map((item, index) => (
         <div
           key={index}
-          className={`accordion-item ${activeIndex === index ? "active" : ""}`}
+          className="rounded-lg mb-0 bg-[#0a0b12] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] p-4 sm:p-6 lg:p-8"
         >
-          <div className="accordion-title" onClick={() => toggleSection(index)}>
-            <span className="accordion-number">{item.number}</span>
-            <span className="accordion-icon">
-              {activeIndex === index ? "▲" : "▼"}
+          <div 
+            className="flex justify-between items-center cursor-pointer transition-colors duration-300 ease-in-out" 
+            onClick={() => toggleSection(index)}
+          >
+            <span className="text-white/70 mr-3 text-xs sm:text-sm">
+              {item.number}
+            </span>
+            <span 
+              className={`text-white transition-transform duration-300 ease-in-out text-xs sm:text-sm ${activeIndex === index ? "rotate-180" : ""}`}
+            >
+              ▼
             </span>
           </div>
-          <h3>{item.title}</h3>
-          <div className="accordion-content">
-            <p>{item.content}</p>
+          <h3 className="text-white/70 uppercase mt-2 text-lg sm:text-xl transition-colors duration-300 ease-in-out">
+            {item.title}
+          </h3>
+          <div 
+            className={`overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index ? "max-h-[500px] opacity-100 pt-4 translate-y-0" : "max-h-0 opacity-0 pt-0 -translate-y-2"}`}
+          >
+            <p className="m-0 text-white/70 text-justify text-sm sm:text-base mb-4 md:mb-0 leading-relaxed">
+              {item.content}
+            </p>
           </div>
         </div>
       ))}
