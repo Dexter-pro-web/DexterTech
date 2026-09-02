@@ -39,7 +39,7 @@ const Accordion = () => {
       {accordionData.map((item, index) => (
         <div
           key={index}
-          className="rounded-lg mb-0 bg-[#0a0b12] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] p-4 sm:p-6 lg:p-8"
+          className="rounded-lg mb-0 bg-[#0a0b12] transition-all duration-300 ease-in-out p-4 sm:p-6 lg:p-8"
         >
           <div 
             className="flex justify-between items-center cursor-pointer transition-colors duration-300 ease-in-out" 
