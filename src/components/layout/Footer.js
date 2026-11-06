@@ -43,13 +43,37 @@ const Footer = () => {
 
           <div className="flex flex-col lg:flex-row flex-wrap gap-6 sm:gap-8 md:gap-10 lg:gap-16">
             <div>
-              <p className="text-base sm:text-lg font-semibold text-white mb-4">Product and Services</p>
+              <p className="text-base sm:text-lg font-semibold text-white mb-4">Navigation</p>
               <ul className="space-y-2">
                 <li><NavLink exact to="/" className="text-sm md:text-base text-gray-400 hover:text-white transition">Home</NavLink></li>
                 <li><NavLink exact to="/about" className="text-sm md:text-base text-gray-400 hover:text-white transition">About us</NavLink></li>
                 <li><NavLink exact to="/services" className="text-sm md:text-base text-gray-400 hover:text-white transition">Services</NavLink></li>
+                <li><NavLink exact to="/#technologies" className="text-sm md:text-base text-gray-400 hover:text-white transition">Technologies</NavLink></li>
                 <li><NavLink exact to="/partners" className="text-sm md:text-base text-gray-400 hover:text-white transition">Partners</NavLink></li>
                 <li><NavLink exact to="/careers" className="text-sm md:text-base text-gray-400 hover:text-white transition">Careers</NavLink></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-base sm:text-lg font-semibold text-white mb-4">Technologies</p>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="https://hmfasttrack.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm md:text-base text-gray-400 hover:text-white transition"
+                  >
+                    HM FastTrack
+                  </a>
+                </li>
+                <li>
+                  <NavLink
+                    to="/#technologies"
+                    className="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition"
+                  >
+                    All Technologies →
+                  </NavLink>
+                </li>
               </ul>
             </div>
             <div>

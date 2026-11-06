@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import PartnerLogo from "../components/sections/PartnerLogo";
+import Technologies from "../components/sections/Technologies";
 
 export default function Home() {
   useEffect(() => {
@@ -150,6 +151,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="w-full h-[9px] bg-[linear-gradient(110deg,black_10%,#d0a225_10%,#136dec_15%,white_15%)]"></div>
+
+      <Technologies />
 
       <div className="w-full h-2 bg-gray-50 bg-[linear-gradient(50deg,white_85%,#d0a225_85%,#136dec_90%,rgba(255,255,255,0)_90%)]"></div>
 

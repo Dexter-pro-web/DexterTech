@@ -56,6 +56,24 @@ const Navbar = () => {
           </li>
           <li className="lg:py-2">
             <NavLink
+              to="/#technologies"
+              className="text-white transition-colors duration-300 ease text-lg lg:text-base hover:font-bold [&.active]:text-[#1a6ee5] [&.active]:pb-1 [&.active]:border-b-2 [&.active]:border-[#1a6ee5]"
+              onClick={(e) => {
+                closeMenu();
+                if (window.location.pathname === "/") {
+                  const elem = document.getElementById("technologies");
+                  if (elem) {
+                    e.preventDefault();
+                    elem.scrollIntoView({ behavior: "smooth" });
+                  }
+                }
+              }}
+            >
+              Technologies
+            </NavLink>
+          </li>
+          <li className="lg:py-2">
+            <NavLink
               to="/partners"
               className="text-white transition-colors duration-300 ease text-lg lg:text-base hover:font-bold [&.active]:text-[#1a6ee5] [&.active]:pb-1 [&.active]:border-b-2 [&.active]:border-[#1a6ee5]"
               activeClassName="active"
