@@ -2,10 +2,10 @@ export const technologiesData = [
   {
     id: "hmfasttrack",
     name: "HM FASTTRACK",
-    badge: "ENERGY & PETROLEUM TECH",
+    badge: "ENERGY AND PETROLEUM TECH",
     tagline: "Match Reservoir Models In One Run",
     description:
-      "HM FastTrack is an AI-powered, physics-guided history matching and reservoir simulation optimization platform engineered by DexterPro Technology. It automatically calibrates reservoir models against real field production, bottom-hole pressure, and fractional water cuts, turning months of trial-and-error simulation runs into automated, audit-ready subsurface forecasts.",
+      "HM FastTrack is an AI-powered, physics-guided history matching and reservoir simulation optimization platform engineered by DexterPro Technology. It automatically calibrates reservoir models against real field production, bottom-hole pressure, and fractional water cuts, turning months of simulation runs into automated, audit-ready subsurface forecasts.",
     websiteUrl: "https://hmfasttrack.com",
     logo: "/images/technologies/hmfasttrack/logo.svg",
     mockup: "/images/technologies/hmfasttrack/pressure-match-mockup.svg",
@@ -13,7 +13,7 @@ export const technologiesData = [
       {
         value: "11",
         label: "DoE Algorithms",
-        sub: "Taguchi & Latin Hypercube",
+        sub: "Taguchi and Latin Hypercube",
       },
       {
         value: "CatBoost",
@@ -26,7 +26,7 @@ export const technologiesData = [
         sub: "10x Faster Realizations",
       },
       {
-        value: "P10 - P90",
+        value: "P10 / P90",
         label: "Monte Carlo",
         sub: "Probabilistic Uncertainty",
       },

@@ -48,7 +48,7 @@ const Footer = () => {
                 <li><NavLink exact to="/" className="text-sm md:text-base text-gray-400 hover:text-white transition">Home</NavLink></li>
                 <li><NavLink exact to="/about" className="text-sm md:text-base text-gray-400 hover:text-white transition">About us</NavLink></li>
                 <li><NavLink exact to="/services" className="text-sm md:text-base text-gray-400 hover:text-white transition">Services</NavLink></li>
-                <li><NavLink exact to="/#technologies" className="text-sm md:text-base text-gray-400 hover:text-white transition">Technologies</NavLink></li>
+                <li><NavLink exact to="/technologies" className="text-sm md:text-base text-gray-400 hover:text-white transition">Technologies</NavLink></li>
                 <li><NavLink exact to="/partners" className="text-sm md:text-base text-gray-400 hover:text-white transition">Partners</NavLink></li>
                 <li><NavLink exact to="/careers" className="text-sm md:text-base text-gray-400 hover:text-white transition">Careers</NavLink></li>
               </ul>
@@ -68,7 +68,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/#technologies"
+                    to="/technologies"
                     className="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition"
                   >
                     All Technologies →
