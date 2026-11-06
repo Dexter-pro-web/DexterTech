@@ -24,7 +24,7 @@ export default function Technologies() {
         <p data-aos="zoom-in" className="text-base lg:text-lg mb-8 max-w-3xl text-gray-300 relative z-20 leading-relaxed">
           Innovative digital products and software platforms engineered by DexterPro. From AI-powered industry solutions to modern enterprise and consumer applications, we build technology that empowers businesses and transforms everyday experiences.
         </p>
-        <a href="mailto:info@dexterprotechnology.com">
+        <a href="mailto:info@dexterprolimited.com">
           <button className="relative z-20 w-full sm:w-auto px-8 py-4 mb-10 lg:mb-20 bg-[#136dec] text-white rounded-lg font-bold text-sm lg:text-base cursor-pointer overflow-visible hover:bg-blue-700 transition">
             PARTNER OR LICENSE OUR TECH
             <img className="absolute w-[58px] h-[26px] -right-6 -bottom-3 z-10" src={effect} alt="" />
